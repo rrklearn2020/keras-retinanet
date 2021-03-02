@@ -68,17 +68,19 @@ For training on [Pascal VOC](http://host.robots.ox.ac.uk/pascal/VOC/), run:
 # Running directly from the repository:
 keras_retinanet/bin/train.py pascal /path/to/VOCdevkit/VOC2007
 
-# Using the installed script:
-retinanet-train pascal /path/to/VOCdevkit/VOC2007
-```
+# Running directly from the repository with tf.distribute.MirroredStrategy():
+keras_retinanet/bin/train_v2.py pascal /path/to/VOCdevkit/VOC2007
+
 
 For training on [MS COCO](http://cocodataset.org/#home), run:
 ```shell
 # Running directly from the repository:
 keras_retinanet/bin/train.py coco /path/to/MS/COCO
 
-# Using the installed script:
-retinanet-train coco /path/to/MS/COCO
+# Running directly from the repository with tf.distribute.MirroredStrategy():
+keras_retinanet/bin/train_v2.py coco /path/to/MS/COCO
+
+
 ```
 
 For training on Open Images Dataset [OID](https://storage.googleapis.com/openimages/web/index.html)
